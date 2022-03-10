@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+	<AddIn Type="Command">
+		<Assembly>"C:\Program Files\RevitAPITraining1\RevitAPIUI8._1.dll"</Assembly>
+		<AddInId>053630C0-B58A-4D74-8FED-D230BE968855</AddInId>
+		<FullClassName>RevitAPIUI8._1.Main</FullClassName>
+		<VendorId>ADSK</VendorId>
+		<Text>Экспорт в DWG/IFC/NWC/JPG (тема 8)</Text>
+	</AddIn>
+</RevitAddIns>

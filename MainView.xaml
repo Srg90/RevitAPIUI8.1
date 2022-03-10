@@ -1,0 +1,20 @@
+﻿<Window x:Class="RevitAPIUI8._1.MainView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RevitAPIUI8._1"
+             mc:Ignorable="d" 
+             MinHeight="250" MinWidth="300" MaxHeight="250" MaxWidth="300"
+             Title="Экспорт файлов">
+    <StackPanel>
+        <Label Content="Выбрать вид" Margin="5"/>
+        <ComboBox ItemsSource="{Binding Views}" SelectedValue="{Binding SelectedViewPlan}" DisplayMemberPath="Name" Margin="5"/>
+
+        <Label Content="Выбрать формат" Margin="5"/>
+        <ComboBox ItemsSource="{Binding Formats}" Text="{Binding SelectedFormat}" Margin="5"/>
+
+        <Button Content="Экспорт в файл" Command="{Binding SaveCommand}" Margin="5" Padding="5"/>
+
+    </StackPanel>
+</Window>
