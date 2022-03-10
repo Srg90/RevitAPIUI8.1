@@ -114,17 +114,17 @@ namespace RevitAPIUI8._1
                             return;
                         //FilteredElementCollector nwc = new FilteredElementCollector(_doc);
                         //View3D v3d = nwc.OfClass(typeof(View3D)).ToElements().Cast<View3D>().Where(v => !v.IsTemplate).First();
-                        using (var ts = new Transaction(_doc, "Export NWC"))
-                        {
-                            ts.Start();
+                        //using (var ts = new Transaction(_doc, "Export NWC"))
+                        //{
+                        //    ts.Start();
                             var nwcOption = new NavisworksExportOptions 
                             { 
                                 ExportScope = NavisworksExportScope.View,
                                 ViewId = SelectedViewPlan.Id
                             }; 
                             _doc.Export(pathNwc, nameNwc, nwcOption);
-                            ts.Commit();
-                        }
+                        //    ts.Commit();
+                        //}
                         break;
 
                     case "JPG":
